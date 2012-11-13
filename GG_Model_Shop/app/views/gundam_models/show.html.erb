@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @gundam_model.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @gundam_model.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @gundam_model.description %>
+</p>
+
+<p>
+  <b>Grade:</b>
+  <%= @gundam_model.grade_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_gundam_model_path(@gundam_model) %> |
+<%= link_to 'Back', gundam_models_path %>

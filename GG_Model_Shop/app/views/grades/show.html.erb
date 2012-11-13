@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @grade.id %>
+</p>
+
+<p>
+  <b>Grade type:</b>
+  <%= @grade.grade_type %>
+</p>
+
+<p>
+  <b>Gundam model:</b>
+  <%= @grade.gundam_model_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_grade_path(@grade) %> |
+<%= link_to 'Back', grades_path %>

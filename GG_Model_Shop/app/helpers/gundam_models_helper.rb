@@ -1,0 +1,2 @@
+module GundamModelsHelper
+end

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  quantity: 1
+  price: 9.99
+  order_id: 1
+  gundam_model_id: 1
+  grade_id: 1
+
+two:
+  id: 1
+  quantity: 1
+  price: 9.99
+  order_id: 1
+  gundam_model_id: 1
+  grade_id: 1

@@ -1,0 +1,29 @@
+<h1>Listing gundam_models</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Grade</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gundam_models.each do |gundam_model| %>
+  <tr>
+    <td><%= gundam_model.id %></td>
+    <td><%= gundam_model.name %></td>
+    <td><%= gundam_model.description %></td>
+    <td><%= gundam_model.grade_id %></td>
+    <td><%= link_to 'Show', gundam_model %></td>
+    <td><%= link_to 'Edit', edit_gundam_model_path(gundam_model) %></td>
+    <td><%= link_to 'Destroy', gundam_model, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gundam model', new_gundam_model_path %>
