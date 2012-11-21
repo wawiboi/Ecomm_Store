@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-GGModelShopVer3::Application.config.secret_token = '23bafe2203e20e3c0e1d2d5710e20c13ae69e458256728518a5e996594bb33150d052d2c2fff9a93e2f2e40a1b7f4e058df893b8b17fff3d8144e06b59284bda'
+GGModelShopVer3::Application.config.secret_token = '5f5a898d96ea7f7f64e619d3e3cc76aa6e8297ab353d0a55f20fba68f723504a0fba7eb9444ac1b178618b2a55231d2a8cc457bf8db5d5985b9592e4ac843440'
