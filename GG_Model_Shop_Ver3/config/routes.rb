@@ -1,4 +1,12 @@
 GGModelShopVer3::Application.routes.draw do
+  resources :categories
+
+  resources :products
+
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
