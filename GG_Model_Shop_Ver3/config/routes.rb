@@ -1,4 +1,8 @@
 GGModelShopVer3::Application.routes.draw do
+  resources :abouts
+
+  resources :contacts
+
   resources :categories
 
   resources :products

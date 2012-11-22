@@ -6,6 +6,7 @@ ActiveAdmin.register Product do
         f.input :price
         f.input :stock_quantity
         f.input :image
+        f.input :onsale, :as => :boolean
         f.input :category_id, :as => :select, :collection => Category.all
       end
       f.buttons
@@ -33,6 +34,9 @@ ActiveAdmin.register Product do
     column :category
     column 'Stock Quantity', :sortable => :stock_quantity do |product|
       product.stock_quantity
+    end
+    column 'On Sale' do |product|
+      check_box_tag(product.onsale)
     end
     default_actions  
   end
