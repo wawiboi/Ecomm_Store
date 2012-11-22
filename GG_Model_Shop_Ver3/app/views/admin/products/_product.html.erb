@@ -1,23 +1,19 @@
-<div>
-  <div>
-    <h2><%= product.name %></h2>
-    <p>
-      <%= image_tag product.image %>
-    </p>
-  </div>
-  
-  <div class="f_left">
-    <p>
-      <b>Description: </b>
-      <%= product.description %>
-    </p>
-    <p>
-      <b>Product Category: </b>
-      <% if product.category.present? %>
-        <%= product.category.name %>
-      <% end %>
-    </p>
-    <p><b>Price:</b> <%= number_to_currency product.price %></p>
-    <p><b>Quantity:</b> <%= product.stock_quantity %></p>
-  </div>
+<div class='look_nice'>
+  <h2><%= product.name %></h2>
+  <p>
+    <%= image_tag product.image, :size => '150x100' %>
+  </p>
+    
+  <p>
+    <b>Description: </b>
+    <%= product.description %>
+  </p>
+  <p>
+    <b>Product Category: </b>
+    <% if product.category.present? %>
+      <%= product.category.name %>
+    <% end %>
+  </p>
+  <p><b>Price:</b> <%= number_to_currency product.price %></p>
+  <p><b>Quantity:</b> <%= product.stock_quantity %></p>
 </div>
