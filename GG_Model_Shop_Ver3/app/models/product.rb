@@ -3,5 +3,6 @@ class Product < ActiveRecord::Base
   belongs_to :category
   
   validates_presence_of :description, :name, :price, :stock_quantity
+  validates :description, :length => { :maximum => 500 }
   
 end
