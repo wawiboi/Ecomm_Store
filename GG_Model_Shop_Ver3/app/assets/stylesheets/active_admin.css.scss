@@ -11,6 +11,9 @@
 @import "active_admin/mixins";
 @import "active_admin/base";
 
+//import from the products page
+@import "products";
+
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
 //
@@ -27,3 +30,5 @@
 // .active_admin       applies to any Active Admin namespace
 // .admin_namespace    applies to the admin namespace (eg: /admin)
 // .other_namespace    applies to a custom namespace named other (eg: /other)
+
+

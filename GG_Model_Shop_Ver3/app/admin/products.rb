@@ -12,9 +12,28 @@ ActiveAdmin.register Product do
    end
    
   show do
-    div do
-      simple_format product.description
-      image_tag product.image
+    render product
+  end
+  
+  index do
+    column 'Gundam Model', :sortable => :name do |product|
+      div :class => 'bold' do
+        product.name
+      end
+      div do
+        image_tag product.image, :size => "150x100"
+      end
+    end 
+    column 'Description' do |product|
+      product.description.truncate(100)
     end
+    column 'Price', :sortable => :price do |product|
+      number_to_currency product.price.to_f
+    end
+    column :category
+    column 'Stock Quantity', :sortable => :stock_quantity do |product|
+      product.stock_quantity
+    end
+    default_actions  
   end
 end
