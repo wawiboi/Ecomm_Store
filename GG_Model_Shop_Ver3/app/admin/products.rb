@@ -36,7 +36,15 @@ ActiveAdmin.register Product do
       product.stock_quantity
     end
     column 'On Sale' do |product|
-      check_box_tag(product.onsale)
+      if product.onsale?
+        div do
+          'Yes'
+        end
+      else
+        div do
+          'No'
+        end
+      end 
     end
     default_actions  
   end

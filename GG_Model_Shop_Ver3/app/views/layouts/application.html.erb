@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<header>
+  <h1>Gondai Gundam Model Shop</h1>
+  <span><%= link_to 'Log In' %></span>
+  --
+  <span><%= link_to 'Sign Up' %></span>
+</header>
+<section class='main_content'>
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', home_path %></li>
+      <li><%= link_to 'Products', products_path %></li>
+      <li><%= link_to 'About Us' %></li>
+      <li><%= link_to 'Contact Us' %></li>
+    </ul>
+  </nav>
+  <%= yield %>
+</section>
 </body>
 </html>
