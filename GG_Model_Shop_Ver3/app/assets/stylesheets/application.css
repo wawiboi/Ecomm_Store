@@ -57,7 +57,7 @@ header
 }
 header h1
 {
-    width: 1150px;
+    width: 1050px;
     float: left;
     font-size: 4em;
     font-family: myFirstFont;
@@ -93,7 +93,7 @@ nav
     margin: 10px auto;
     border: black solid 1px;
     border-radius: 5px;
-    width: 700px;
+    width: 750px;
     height: 40px;
     background: rgb(242,246,248); /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -122,7 +122,7 @@ nav ul li
 }
 nav ul
 {
-    width: 700px;
+    width: 750px;
     margin: 0 auto;
     padding: 10px 0;
 }
