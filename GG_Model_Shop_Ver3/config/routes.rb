@@ -11,6 +11,8 @@ GGModelShopVer3::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
+  match "aboutus" => "abouts#aboutus", :as => "aboutus"
+  match "contactus" => "contacts#contactus", :as => "contactus"
   match "products" => "products#index", :as => "products"     
   root :to => "products#front", :as => "home"
   

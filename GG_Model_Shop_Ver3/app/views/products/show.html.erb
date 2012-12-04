@@ -1,40 +1,20 @@
-<p id="notice"><%= notice %></p>
+<div class="show_case">
+  <div class="image_border">
+    <%= image_tag @product.image, :size => "300x200" %>
+  </div>
+  <h1><%= @product.name %></h1> 
+  <div class="show_info">
+    <span class="l_bold">Description: </span>
+    <span><%= @product.description %></span><br/>
+    <span class="l_bold">Price:</span>
+    <span><%= @product.price.to_f %></span><br/>
+    <span class="l_bold">Quantity:</span>
+    <span><%= @product.stock_quantity %></span><br/>
+    <span class="l_bold">Category:</span>
+    <span><%= @product.category.name %></span><br/>
+  </div>
+</div>
 
-<p>
-  <b>Name:</b>
-  <%= @product.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
-
-<p>
-  <b>Stock quantity:</b>
-  <%= @product.stock_quantity %>
-</p>
-
-<p>
-  <b>Image:</b>
-  <%= @product.image %>
-</p>
-
-<p>
-  <b>Onsale:</b>
-  <%= @product.onsale %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%= @product.category_id %>
-</p>
-
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<div class="buy_show">
+  <%= link_to 'BUY NOW' %>
+</div>

@@ -132,9 +132,9 @@ nav ul
     margin: 0 auto;
     border-left: 3px solid black;
     border-right: 3px solid black;
-    height: 100%;
     padding: 10px 50px;
     text-align: center;
+    height: 650px;
     
     /*shadow boxes*/
     -webkit-box-shadow: 0px 3px 100px rgba(51, 50, 50, 1);
@@ -152,5 +152,5 @@ nav ul
     background: -ms-linear-gradient(left,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* IE10+ */
     background: linear-gradient(to right,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-8 */
-
+    overflow: auto;
 }
