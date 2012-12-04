@@ -13,8 +13,10 @@ GGModelShopVer3::Application.routes.draw do
 
   match "aboutus" => "abouts#aboutus", :as => "aboutus"
   match "contactus" => "contacts#contactus", :as => "contactus"
-  match "products" => "products#index", :as => "products"     
+  match "finder" => "finder#index", :as => "finder", :via => :get
+  match "finder/get_products_by_category/:id" => "finder#get_products_by_category", :as => "get_products"
   root :to => "products#front", :as => "home"
+  match 'results' => 'finder#search_results', :as => 'results', :via => :post  
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

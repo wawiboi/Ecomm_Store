@@ -1,0 +1,42 @@
+// Place all the styles related to the finder controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.category_menu
+{
+    li{
+        display: inline;
+        margin-right: 10px;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        padding-right: 10px;
+        padding-left: 10px;
+        a{
+            font-size: 1.5em;
+            text-decoration:none;
+        }
+    }
+}
+
+.finder_header
+{
+    text-align: left;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search_results
+{
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.not_found, .not_found i
+{
+    text-align: left;
+    font-size: 1.2em;
+}

@@ -1,0 +1,7 @@
+<ul class="category_menu">
+  <%= render @categories %>
+</ul>
+<h1 class="finder_header"><%= @products.first.category.name %></h1>
+<div>
+  <%= render @products %>
+</div>

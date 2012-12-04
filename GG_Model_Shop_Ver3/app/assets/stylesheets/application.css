@@ -154,3 +154,13 @@ nav ul
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-8 */
     overflow: auto;
 }
+
+.search
+{
+    text-align: right;
+    width: 770px;
+}
+.search input, .search label
+{
+    font-size: 1.3em;
+}

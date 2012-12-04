@@ -14,10 +14,16 @@
   <span><%= link_to 'Sign Up' %></span>
 </header>
 <section class='main_content'>
+  <div class="search">
+    <%= form_tag results_path do %>
+      <%= text_field_tag :keyword %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
   <nav>
     <ul>
       <li><%= link_to 'Home', home_path %></li>
-      <li><%= link_to 'Products', products_path %></li>
+      <li><%= link_to 'All Products', finder_path %></li>
       <li><%= link_to 'About Us', aboutus_path %></li>
       <li><%= link_to 'Contact Us', contactus_path %></li>
     </ul>
