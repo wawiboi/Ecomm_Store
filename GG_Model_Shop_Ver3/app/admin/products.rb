@@ -7,6 +7,7 @@ ActiveAdmin.register Product do
         f.input :stock_quantity
         f.input :image
         f.input :onsale, :as => :boolean
+        f.input :new, :as => :boolean
         f.input :category_id, :as => :select, :collection => Category.all
       end
       f.buttons
@@ -37,6 +38,18 @@ ActiveAdmin.register Product do
     end
     column 'On Sale' do |product|
       if product.onsale?
+        div do
+          'Yes'
+        end
+      else
+        div do
+          'No'
+        end
+      end 
+    end
+    
+    column 'New Product' do |product|
+      if product.new?
         div do
           'Yes'
         end

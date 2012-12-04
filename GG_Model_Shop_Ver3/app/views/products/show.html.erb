@@ -1,6 +1,10 @@
 <div class="show_case">
   <div class="image_border">
-    <%= image_tag @product.image, :size => "300x200" %>
+    <% if @product.image.blank? %>
+      <%= image_tag 'no-photo.jpg', :size => "300x200" %>
+    <% else %>
+      <%= image_tag @product.image, :size => "300x200" %>
+    <% end %>
   </div>
   <h1><%= @product.name %></h1> 
   <div class="show_info">

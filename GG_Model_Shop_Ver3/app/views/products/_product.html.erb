@@ -1,11 +1,17 @@
 <div class="look_nice">
   <div class="top">
-    <%= link_to (image_tag product.image, :size => '125x130'), product_path(product.id) %><br/>
+    <% if product.image.blank? %>
+      <%= link_to (image_tag 'no-photo.jpg', :size => '125x130'), product_path(product.id) %><br/>
+    <% else %>
+      <%= link_to (image_tag product.image, :size => '125x130'), product_path(product.id) %><br/>
+    <% end %>
     <span class="p_name"><%= product.name %></span>
   </div>
   <div class="cap">
     <% if product.onsale == true %>
-      <span class="sale">On Sale!</span><br/>
+      <span class="sale_new">On Sale!</span><br/>
+    <% elsif product.new == true %>
+      <span class="sale_new">NEW!</span><br/>
     <% end %>
     <span class="price">$<%= product.price.to_f %></span>
   </div>
